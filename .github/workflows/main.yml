@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: | 
-            cd ~/var/www/html/
-            touch aws.txt
-            sudo service httpd restart
+            cd ~/var/www/html/Portal/ && git stash && git pull origin main
+          
+          
             
